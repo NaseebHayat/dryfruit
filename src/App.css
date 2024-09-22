@@ -1,0 +1,59 @@
+
+@media (prefers-color-scheme: Dark) {
+  body {
+    background-color: #191313;
+    color: #E0E0E0;
+  }
+  .navbar{
+    background-color:#171414 !important;
+  }
+  .container-fluid a{
+    color: #E0E0E0 !important;
+  }
+  .headerPhoto::after {
+    background: linear-gradient(to bottom, transparent,transparent, #171414) !important;
+}
+}
+
+body{
+  background: rgba(0, 0, 0, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.9px);
+  -webkit-backdrop-filter: blur(1.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+  .navbar{
+    background-color:rgb(93, 93, 93);
+    position:sticky !important;
+    top: 0;
+  }
+  .container-fluid a{
+    color:  #E0E0E0;
+  }
+
+.headerPhoto {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  object-fit: cover;
+
+}
+
+
+  .headerPhoto::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent,transparent, rgb(93, 93, 93)) ;
+  background: linear-gradient(90 deg,);
+}
+
+
+
+
