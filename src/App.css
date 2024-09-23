@@ -25,6 +25,9 @@
 .card{
   background: rgb(63 71 116 / 60%);;
 }
+.homecard{
+  background: rgb(63 71 116 / 60%);;
+}
 }
 
 @media (prefers-color-scheme: light){
@@ -37,7 +40,6 @@
   }
   .card-description { 
     color: #2e3253;
-    /* font-size: 1rem; */
   }
   .card-title{
     color: #2e3253;
@@ -45,6 +47,10 @@
   .card{
     background: rgba(201, 210, 255, 0.6);
   }
+  .homecard{
+    background: rgba(201, 210, 255, 0.6);
+  }
+
 }
 
 
@@ -56,7 +62,7 @@ width: 90%;
 }
 
 h1{
-  margin: 0 4vh;
+  margin:15vh 0 0 5vh;
 }
 .card {
  color: #E0E0E0;
@@ -73,7 +79,41 @@ backdrop-filter: blur(1.3px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.card:hover {
+.homecard {
+  display: flex;
+  flex-direction: row;
+  color: #E0E0E0;
+   border-radius: 10px;
+   overflow: hidden;
+   width: 90%; 
+   transition: transform 0.3s ease;
+   margin: 20px auto; 
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(1.3px);
+ -webkit-backdrop-filter: blur(1.3px);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ 
+  /* display: flex; */
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between; /* Aligns items horizontally with space between */
+  /* padding: 20px; */
+}
+.homecard div {
+  flex: 1; 
+    padding-left: 20px;
+}
+ p{
+  line-height: 1.6; 
+  text-align: justify;
+}
+
+ 
+ .homecard-img {
+  width: 300px; 
+  height: max-content; 
+  object-fit:contain; 
+}
+.card:hover, .homecard:hover {
   transform: translateY(-10px);
 }
 .card-img {
@@ -84,6 +124,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .card-content { 
   padding: 15px;
   text-align: center;
+  /* width: 50%; */
 }
 .card-title {
   /* color: #2e3253; */
@@ -92,9 +133,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .card-description { 
   /* color: #2e3253; */
+  margin: auto;
+  width: 95%;
   font-size: 1rem;
 }
-
 
 
 
@@ -137,8 +179,25 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 
 @media(max-width:460px){
-  /* .container{
+  .homecard{
+   
     display: flex;
     flex-direction: column;
-    } */
+    }
+    .homecard-img{
+      object-fit: cover;
+      width: 100%;
+    }
+   
+}
+@media(max-width:770px){
+  .homecard{
+   
+    display: flex;
+    flex-direction: column;
+    }
+    .homecard-img{
+      object-fit: cover;
+      width: 100%;
+    }
 }
