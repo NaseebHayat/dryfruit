@@ -1,33 +1,111 @@
 
 @media (prefers-color-scheme: Dark) {
   body {
-    background-color: #191313;
+    background-color: #282639;
     color: #E0E0E0;
   }
   .navbar{
-    background-color:#171414 !important;
+    background-color:#100d1f !important;
   }
   .container-fluid a{
     color: #E0E0E0 !important;
   }
   .headerPhoto::after {
-    background: linear-gradient(to bottom, transparent,transparent, #171414) !important;
+    background: linear-gradient(to bottom, transparent,transparent, #100d1f) !important;
+}
+.card-description { 
+  color: #E0E0E0;
+  /* font-size: 1rem; */
+}
+.card-title {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.card{
+  background: rgb(63 71 116 / 60%);;
 }
 }
 
-body{
-  background: rgba(0, 0, 0, 0.21);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1.9px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+@media (prefers-color-scheme: light){
+
+  body{
+    background-color: rgb(184, 175, 204);
+  }
+  h1{
+    color: #2e3253;
+  }
+  .card-description { 
+    color: #2e3253;
+    /* font-size: 1rem; */
+  }
+  .card-title{
+    color: #2e3253;
+  }
+  .card{
+    background: rgba(201, 210, 255, 0.6);
+  }
 }
+
+
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 90%;
+}
+
+h1{
+  margin: 0 4vh;
+}
+.card {
+ color: #E0E0E0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px; 
+  
+  transition: transform 0.3s ease;
+  margin: 20px auto; 
+  
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.3px);
+-webkit-backdrop-filter: blur(1.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+.card-img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+.card-content { 
+  padding: 15px;
+  text-align: center;
+}
+.card-title {
+  /* color: #2e3253; */
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.card-description { 
+  /* color: #2e3253; */
+  font-size: 1rem;
+}
+
+
+
+
+
 
   .navbar{
-    background-color:rgb(93, 93, 93);
+    background-color:#2e3253;
     position:sticky !important;
+    z-index: 100;
     top: 0;
+    margin-bottom: 10vh;
   }
   .container-fluid a{
     color:  #E0E0E0;
@@ -50,10 +128,17 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, transparent,transparent, rgb(93, 93, 93)) ;
-  background: linear-gradient(90 deg,);
+    background: linear-gradient(to bottom, transparent,transparent,#2e3253) ;
+  
 }
 
 
 
 
+
+@media(max-width:460px){
+  /* .container{
+    display: flex;
+    flex-direction: column;
+    } */
+}

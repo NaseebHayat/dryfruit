@@ -10,7 +10,7 @@ export default function Heading() {
     <div className='headerPhoto'>
       <img className='headerPhoto' src="/images/HeaderPhoto.jpg" alt="" />
     </div>
-  <div className="hello"></div>
+
       <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid ">
     <a className="navbar-brand" href="#">Home</a>
@@ -24,6 +24,9 @@ export default function Heading() {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Our Services</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">About Us</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Contact Us</a>
