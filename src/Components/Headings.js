@@ -8,8 +8,8 @@ export default function Heading() {
     <>
    
     <div className='headerPhoto'>
-      <img className='headerPhoto' src="/images/HeaderPhoto.jpg" alt="" />
-    <h1 className='headerName'>Global Sourcing of Premium Dry Fruits</h1>
+      <img className='headerPhoto' src="/images/HeaderPhoto.jpg" alt="Dry Figs" />
+    <h1 className='headerName'>Hikmat: Your Gateway to Quality Dry Fruits</h1>
     </div>
    
 <img src="/images/logo2.png" alt="" className='logo' />

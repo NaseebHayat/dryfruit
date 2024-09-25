@@ -8,7 +8,7 @@ export default function Items() {
     <h1>We Sell</h1>
       <div className="container">
         <div class="card">
-          <img src="/images/dry figs.jpg" alt="Description" class="card-img" />
+          <img src="/images/dry figs.jpg" alt="Dry Figs" class="card-img" />
           <div class="card-content">
             <h2 class="card-title">Dry Figs</h2>
             <p class="card-description">
