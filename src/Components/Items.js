@@ -1,62 +1,53 @@
-import React from 'react'
-
+import React,{useState,useEffect} from 'react'
+import axios from 'axios'
 export default function Items() {
+  const [items, setItems] = useState([]);
 
+  useEffect(() => {
+    axios
+      .get('http://localhost:1337/api/items?populate=*')  // Ensure the image field is populated
+      .then((response) => {
+              
+        setItems(response.data.data); 
+        console.log(response.data.data)
+      })
+      .catch((err) => {
+        console.error('Error fetching data: ', err);
+      });
+  }, []);
 
   return (
     <>
-    <h1>We Sell</h1>
-      <div className="container">
-        <div className="card">
-          <img src="/images/dry figs.jpg" alt="Dry Figs" className="card-img" />
-          <div className="card-content">
-            <h2 className="card-title">Dry Figs</h2>
-            <p className="card-description">
-            Our premium dry figs are sourced directly from the sun-kissed orchards of Afghanistan,
-             renowned for producing some of the finest figs in the world. Each fig is handpicked at peak ripeness,
-              ensuring exceptional flavor and natural sweetness. Packed with essential nutrients, 
-              our dry figs are not only delicious but also a healthy snack option. Whether enjoyed on their own or added to your favorite recipes, 
-              these figs bring a taste of Afghan tradition to your table. Experience the rich heritage and quality of Afghan dry figs,
-               perfect for wholesalers and retailers seeking the best for their customers.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <img src="/images/HeaderPhoto.jpg" alt="Description" className="card-img" />
-          <div className="card-content">
-            <h2 className="card-title">Figs</h2>
-            <p className="card-description">
-              This is a description of the product. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi qui voluptatibus minima ipsa aspernatur rem aliquid illo sint obcaecati quod, in blanditiis, incidunt quae, temporibus earum quo. Officiis, quam. It includes all the details you want to show.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <img src="/images/HeaderPhoto.jpg" alt="Description" className="card-img" />
-          <div className="card-content">
-            <h2 className="card-title">Dry Figs</h2>
-            <p className="card-description">
-              This is a description of the product. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi qui voluptatibus minima ipsa aspernatur rem aliquid illo sint obcaecati quod, in blanditiis, incidunt quae, temporibus earum quo. Officiis, quam. It includes all the details you want to show.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <img src="/images/HeaderPhoto.jpg" alt="Description" className="card-img" />
-          <div className="card-content">
-            <h2 className="card-title">Figs</h2>
-            <p className="card-description">
-              This is a description of the product. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi qui voluptatibus minima ipsa aspernatur rem aliquid illo sint obcaecati quod, in blanditiis, incidunt quae, temporibus earum quo. Officiis, quam. It includes all the details you want to show.
-            </p>
-          </div>
-        </div>
-        <div className="card">
-          <img src="/images/HeaderPhoto.jpg" alt="Description" className="card-img" />
-          <div className="card-content">
-            <h2 className="card-title">Figs</h2>
-            <p className="card-description">
-              This is a description of the product. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi qui voluptatibus minima ipsa aspernatur rem aliquid illo sint obcaecati quod, in blanditiis, incidunt quae, temporibus earum quo. Officiis, quam. It includes all the details you want to show.
-            </p>
-          </div>
-        </div>
+   <h1>Items</h1>
+      <div className='container'>
+        {items.length > 0 ? (
+          items.map((item) => (
+            <div className='itemcard' key={item.id}>
+                <img 
+                className='card-img'
+                  src={`http://localhost:1337${item.Pictures.url}`} 
+                  alt={item.Pictures.alternativeText}
+                />
+             
+             
+             <div className="card-content">
+              <h2>{item.titles}</h2>
+              {item.Description && item.Description.map((desc, idx) => (
+                <div className='card-description' key={idx}>
+                  {desc.children && desc.children.map((child, idx) => (
+                    <p key={idx}>{child.text}</p>
+                  ))}
+                </div>
+              ))}
+              
+              </div>
+
+            
+            </div>
+          ))
+        ) : (
+          <p>No items found</p>
+        )}
       </div>
     </>
   )

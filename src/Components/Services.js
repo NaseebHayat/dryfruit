@@ -9,10 +9,8 @@ const Services = () => {
       .get('http://localhost:1337/api/services?populate=*')  // Ensure the image field is populated
       .then((response) => {
               
-        setServices(response.data.data);  // Assign the correct data array
-        console.log(response.data.data);
-        console.log(services[0].Pictures.url)
-        console.log(services.Pictures)
+        setServices(response.data.data); 
+
       })
       .catch((err) => {
         console.error('Error fetching data: ', err);
@@ -25,7 +23,7 @@ const Services = () => {
       <div className='container'>
         {services.length > 0 ? (
           services.map((service) => (
-            <div className='card' key={service.id}>
+            <div className='itemcard' key={service.id}>
                 <img 
                 className='card-img'
                   src={`http://localhost:1337${service.Pictures.url}`} 
@@ -48,7 +46,7 @@ const Services = () => {
               
               </div>
 
-              {/* Rendering the image */}
+            
             </div>
           ))
         ) : (
