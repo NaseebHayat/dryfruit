@@ -1,19 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export default function Services() {
+const Services = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:1337/api/services?populate=*')  // Ensure the image field is populated
+      .then((response) => {
+              
+        setServices(response.data.data);  // Assign the correct data array
+        console.log(response.data.data);
+        console.log(services[0].Pictures.url)
+        console.log(services.Pictures)
+      })
+      .catch((err) => {
+        console.error('Error fetching data: ', err);
+      });
+  }, []);
+
   return (
     <>
-      <h1>We Provide</h1>
-      <div className="container">
-        <div class="card">
-          <img src="/images/packing.jpg" alt="packing" class="card-img" />
-          <div class="card-content">
-            <h2 class="card-title">Packing</h2>
-            <p class="card-description">
-              At Hikmat Dry Fruits, we prioritize the safety of your goods by offering premium packing services. We use high-quality, eco-friendly materials to ensure that every item is securely packed, minimizing the risk of damage during transit. Our team carefully wraps and cushions each item, whether fragile or durable, to provide maximum protection. With years of experience in packaging logistics, we guarantee that your products are handled with care from start to finish, giving you peace of mind knowing that your shipments will arrive safely at their destination.            </p>
-          </div>
-        </div>
+      <h1>Services</h1>
+      <div className='container'>
+        {services.length > 0 ? (
+          services.map((service) => (
+            <div className='card' key={service.id}>
+                <img 
+                className='card-img'
+                  src={`http://localhost:1337${service.Pictures.url}`} 
+                  alt="Our services"
+                />
+             
+             
+             <div className="card-content">
+
+              <h2>{service.titles}</h2>
+             
+
+              {service.Description && service.Description.map((desc, idx) => (
+                <div className='card-description' key={idx}>
+                  {desc.children && desc.children.map((child, idx) => (
+                    <p key={idx}>{child.text}</p>
+                  ))}
+                </div>
+              ))}
+              
+              </div>
+
+              {/* Rendering the image */}
+            </div>
+          ))
+        ) : (
+          <p>No services found</p>
+        )}
       </div>
     </>
   );
-}
+};
+
+export default Services;

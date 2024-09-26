@@ -8,11 +8,11 @@ export default function Home() {
     <>
     <h1>Home</h1>
     <div className='container'>
-       <div class="homecard">
-          <img src="/images/logo.png" alt="Description" class="homecard-img" />
-          <div class="homecard-content card-content">
-            <h2 class=" card-title">Hikmat Dry Fruits</h2>
-            <p class="card-description">
+       <div className="homecard">
+          <img src="/images/logo.png" alt="Description" className="homecard-img" />
+          <div className="homecard-content card-content">
+            <h2 className=" card-title">Hikmat Dry Fruits</h2>
+            <p className="card-description">
             We specialize in sourcing, packing, and exporting top-quality dry fruits to meet the needs of international buyers.
              Our clients trust us to provide the finest nuts, seeds, and dried fruits at competitive prices,
               allowing them to resell in their local markets with confidence. We focus on delivering fresh,

@@ -1,7 +1,6 @@
 
 import './App.css';
 import AboutUs from './Components/AboutUs';
-import Checking from './Components/Checking';
 import ContactUs from './Components/ContactUs';
 import Heading from './Components/Headings';
 import Home from './Components/Home';
@@ -25,7 +24,7 @@ function   App() {
   <Services/>
   <AboutUs/>
   <ContactUs/>
-<Checking/>
+
 
   </>
   );
