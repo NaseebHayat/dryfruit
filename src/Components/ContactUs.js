@@ -52,7 +52,7 @@ const ContactUs = () => {
 
                     
                     <div className="whatsapp-button">
-                        <a className='whatsapp-icon' href="https://wa.me/93707370903?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+                        <a className='whatsapp-icon' href="https://wa.me/93700332876?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
                             <button className="whatsapp">
                                 <img src="/images/whatsapp.png" alt="WhatsApp" /> Chat with us on WhatsApp
                             </button>

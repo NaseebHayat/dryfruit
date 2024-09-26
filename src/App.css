@@ -216,12 +216,18 @@ p {
 
 }
 .aboutus{
+  display: flex;
+  flex-direction: column;
 background-color: #171623 ;
 width: 100% ;
 padding: 30px 25px;
 margin-top: 10px;
 height: 90vh;
-align-content: center;
+/* align-content: center; */
+justify-content: space-evenly;
+}
+.aboutus h1{
+  margin-top: 0;
 }
 
 
@@ -238,11 +244,42 @@ align-content: center;
 .navbar {
   background-color: #2e3253;
   position: sticky !important;
-  z-index: 100;
+  z-index: 5;
   top: 0;
   margin-bottom: 10vh;
   padding: 15px 0;
 }
+.navbar button{
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+/* App.css */
+.navbar-nav .nav-link, .navbar-brand {
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: transparent; 
+  color: #E0E0E0;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover, .navbar-brand:hover {
+  background-color: #282639; 
+}
+
+.navbar-nav .nav-link.active, .navbar-brand.active {
+  background-color: rgb(63, 71, 116); 
+  color: #E0E0E0;
+}
+
+
+
+
+
+
 
 .container-fluid a {
   color: #E0E0E0;
@@ -301,7 +338,7 @@ align-content: center;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   font-size: 16px;
@@ -338,7 +375,7 @@ width: 100%;
   padding: 10px;
   margin: 5px 0 5px 0;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   background-color: #392f70;
   width: 100%;
@@ -359,7 +396,7 @@ width: 100%;
   background-color: #007BFF;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
