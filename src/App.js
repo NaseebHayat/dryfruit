@@ -36,6 +36,7 @@ function App() {
                 scrollToSection={scrollToSection} 
                 refs={{ homeRef, itemsRef, servicesRef, aboutUsRef, contactUsRef }} 
             />
+            <LanguageSelector/>
             <div ref={homeRef}><Home /></div>
             <div ref={itemsRef}><Items /></div>
             <div ref={servicesRef}><Services /></div>

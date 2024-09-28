@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet';
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -15,34 +16,40 @@ const ContactUs = () => {
         });
     };
 
-   
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs.sendForm(
-      'service_vxr6f9o', 
-      'template_5rz4j37', 
-      e.target,         
-      'uoCz3JjAjohDwnMfH'    
-    )
-    .then((result) => {
-      alert('Message sent successfully!');
-    }, (error) => {
-      console.log(error.text);
-      alert('Failed to send message, please try again.'+ error.text);
-    });
+        emailjs.sendForm(
+            'service_vxr6f9o', 
+            'template_5rz4j37', 
+            e.target,         
+            'uoCz3JjAjohDwnMfH'    
+        )
+        .then((result) => {
+            alert('Message sent successfully!');
+        }, (error) => {
+            console.log(error.text);
+            alert('Failed to send message, please try again. ' + error.text);
+        });
 
-    // Reset form fields
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
-  };
+        // Reset form fields
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+        });
+    };
 
     return (
         <>
-                <h1>Contact Us</h1>
+            {/* SEO Head */}
+            <Helmet>
+                <title>Contact Us - Hikmat Dry Fruits</title>
+                <meta name="description" content="Get in touch with Hikmat Dry Fruits for inquiries about our products and services. Reach us via email or WhatsApp." />
+                <link rel="canonical" href="https://www.hikmatdryfruits.com/contact-us" /> {/* Update with the actual URL after deployment */}
+            </Helmet>
+
+            <h1>Contact Us</h1>
             <div className="contact-us">
 
                 <div className="contact-details">
@@ -50,9 +57,13 @@ const ContactUs = () => {
                     <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
                     <p><strong>Business Hours:</strong> 9 AM - 6 PM (Sat - Thu)</p>
 
-                    
                     <div className="whatsapp-button">
-                        <a className='whatsapp-icon' href="https://wa.me/93700332876?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer">
+                        <a 
+                            className='whatsapp-icon' 
+                            href="https://wa.me/93700332876?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
                             <button className="whatsapp">
                                 <img src="/images/whatsapp.png" alt="WhatsApp" /> Chat with us on WhatsApp
                             </button>
@@ -60,7 +71,6 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-               
                 <div className="contact-form">
                     <h3>Send Us a Message</h3>
                     <form onSubmit={sendEmail}>
@@ -99,9 +109,7 @@ const ContactUs = () => {
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
-           
             </div>
-
         </>
     );
 };
