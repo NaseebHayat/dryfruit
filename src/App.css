@@ -13,6 +13,8 @@
     color: #E0E0E0 !important;
   }
 
+  
+
   .headerPhoto::after {
     background: linear-gradient(to bottom, transparent, transparent, #100d1f) !important;
   }
@@ -329,24 +331,50 @@ justify-content: space-evenly;
   margin: 10px 0;
 }
 
-.whatsapp-button {
-  margin: 20px 0;
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: fit-content;
 }
 
-.whatsapp {
+.whatsapp-button {
+  position: absolute;
+  margin: 0;
+  border: 3px solid #25D366;
+  border-radius: 5px;
+  width: 15%;
+  right: 2%;
+  cursor: pointer;
+}
+.whatsapp-button:hover{
   background-color: #25D366;
+  
+}
+
+
+.whatsapp {
+  
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
+  width: 100%;
   border-radius: 10px;
   display: flex;
   align-items: center;
   font-size: 16px;
-  cursor: pointer;
+  
+  justify-content: center;
 }
 
 .whatsapp-icon{
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+.whatsapp-icon img{
+  width:  5vh;
 }
 
 .whatsapp img {
@@ -413,6 +441,10 @@ width: 100%;
   .homecard {
     flex-direction: column;
   }
+  .container-fluid button{
+    align-self: baseline;
+  }
+  
   .itemcard{
     flex-direction: column;
 
@@ -441,11 +473,21 @@ width: 100%;
     font-size:13px;
     
   }
+  .whatsapp{
+    display: none !important;
+  }
+  .whatsapp-button{
+    border: none;
+    width: fit-content;
+  }
 }
 
 @media(max-width:770px) {
   .contact-form button{
-    width: 100%;
+    width: 80%;
+  }
+  .container-fluid button{
+    align-self: baseline;
   }
   .contact-us{
     display: block;
@@ -486,5 +528,53 @@ width: 100%;
     margin-top: 50px;
     
   }
+  .whatsapp{
+    display: none !important;
+    
+  }
+  .whatsapp-button{
+    border: none;
+    width: fit-content;
+  }
 }
 
+@media(max-width:995px){
+  .whatsapp-button{
+    border: none;
+    width: fit-content;
+    right:10%;
+  }
+  .whatsapp{
+    display: none;
+  }
+}
+@media(max-width:600px){
+  .whatsapp-button{
+    /* border: none; */
+    width: fit-content;
+    right:15%;
+  }
+  .whatsapp{
+    display: none;
+  }
+}
+@media(max-width:410px){
+  .whatsapp-button{
+    /* border: none; */
+    width: fit-content;
+    right:20%;
+  }
+  .whatsapp{
+    display: none;
+  }
+}
+@media(max-width:310px){
+  .whatsapp-button{
+    /* border: none; */
+    width: fit-content;
+    right:25%;
+  }
+  .whatsapp{
+    display: none;
+  }
+}

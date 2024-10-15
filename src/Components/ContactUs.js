@@ -54,21 +54,10 @@ const ContactUs = () => {
 
                 <div className="contact-details">
                     <p><strong>Phone:</strong> <a href="tel:+93700332876">+9370 033 2876</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:hikmat.kdr2876@gmail.com">hikmat.kdr2876@gmail.com</a></p>
                     <p><strong>Business Hours:</strong> 9 AM - 6 PM (Sat - Thu)</p>
 
-                    <div className="whatsapp-button">
-                        <a 
-                            className='whatsapp-icon' 
-                            href="https://wa.me/93700332876?text=Hello!%20I%20would%20like%20to%20inquire%20about%20your%20services." 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
-                            <button className="whatsapp">
-                                <img src="/images/whatsapp.png" alt="WhatsApp" /> Chat with us on WhatsApp
-                            </button>
-                        </a>
-                    </div>
+                    
                 </div>
 
                 <div className="contact-form">
