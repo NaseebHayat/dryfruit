@@ -7,7 +7,7 @@ import Home from './Components/Home';
 import Items from './Components/Items';
 import LanguageSelector from './Components/LanguageSelector';
 import Services from './Components/Services';
-
+import { Helmet } from 'react-helmet';
 function App() {
     // Create refs for each section
     const homeRef = useRef(null);
@@ -18,25 +18,31 @@ function App() {
 
     // Scroll function
     const scrollToSection = (ref) => {
-      if (ref.current) {
-          const offset = 80; // Adjust this value to match your navbar height
-          const elementPosition = ref.current.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.scrollY - offset;
-  
-          window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-          });
-      }
-  };
+        if (ref.current) {
+            const offset = 80; // Adjust this value to match your navbar height
+            const elementPosition = ref.current.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
 
     return (
         <>
-            <Heading 
-                scrollToSection={scrollToSection} 
-                refs={{ homeRef, itemsRef, servicesRef, aboutUsRef, contactUsRef }} 
+
+            <Helmet>
+                <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
+                <meta name="description" content="Description of your one-page website." />
+                <link rel="canonical" href="https://hikmatdryfruits.com/" />
+            </Helmet>
+            <Heading
+                scrollToSection={scrollToSection}
+                refs={{ homeRef, itemsRef, servicesRef, aboutUsRef, contactUsRef }}
             />
-            <LanguageSelector/>
+            <LanguageSelector />
             <div ref={homeRef}><Home /></div>
             <div ref={itemsRef}><Items /></div>
             <div ref={servicesRef}><Services /></div>
