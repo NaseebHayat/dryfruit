@@ -4,11 +4,11 @@ import { Helmet } from 'react-helmet';
 export default function Home() {
   return (
     <>
-      {/* SEO Head */}
+  
       <Helmet>
         <title>Hikmat Dry Fruits - Quality Sourcing and Export</title>
         <meta name="description" content="Hikmat Dry Fruits specializes in sourcing and exporting top-quality dry fruits, nuts, and seeds. Your trusted partner for quality products at competitive prices." />
-        <link rel="canonical" href="https://www.hikmatdryfruits.com/home" /> {/* Update with the actual URL after deployment */}
+        <link rel="canonical" href="https://hikmatdryfruits.com/home" />
       </Helmet>
 
       <h1>Home</h1>

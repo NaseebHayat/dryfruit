@@ -42,11 +42,10 @@ const ContactUs = () => {
 
     return (
         <>
-            {/* SEO Head */}
             <Helmet>
                 <title>Contact Us - Hikmat Dry Fruits</title>
                 <meta name="description" content="Get in touch with Hikmat Dry Fruits for inquiries about our products and services. Reach us via email or WhatsApp." />
-                <link rel="canonical" href="https://www.hikmatdryfruits.com/contact-us" /> {/* Update with the actual URL after deployment */}
+                <link rel="canonical" href="https://hikmatdryfruits.com/contact-us" />
             </Helmet>
 
             <h1>Contact Us</h1>

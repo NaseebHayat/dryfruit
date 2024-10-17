@@ -16,7 +16,7 @@ export default function Heading({ scrollToSection, refs }) {
             <Helmet>
                 <title>Hikmat - Quality Dry Fruits</title>
                 <meta name="description" content="Hikmat: Your Gateway to Quality Dry Fruits. Explore our range of organic and quality dry fruits." />
-                <link rel="canonical" href="http://yourwebsite.com/" /> {/* Update with your site URL */}
+                <link rel="canonical" href="https://hikmatdryfruits.com/" /> 
             </Helmet>
 
             <div className='headerPhoto'>

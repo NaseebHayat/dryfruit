@@ -8,11 +8,11 @@ export default function Items() {
 
   return (
     <>
-      {/* SEO Head */}
+  
       <Helmet>
         <title>Hikmat Dry Fruits - Quality Items</title>
         <meta name="description" content="Explore our wide range of quality dry fruits and items at Hikmat Dry Fruits. Sourced and exported to meet your needs." />
-        <link rel="canonical" href="https://www.hikmatdryfruits.com/items" /> {/* Update with the actual URL after deployment */}
+        <link rel="canonical" href="https://hikmatdryfruits.com/items" /> 
       </Helmet>
 
       <h1>Items</h1>

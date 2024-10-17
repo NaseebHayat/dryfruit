@@ -8,11 +8,11 @@ const Services = () => {
  
   return (
     <>
-      {/* SEO Head */}
+      
       <Helmet>
         <title>Hikmat Dry Fruits - Our Services</title>
         <meta name="description" content="Discover the services offered by Hikmat Dry Fruits, specializing in sourcing and exporting high-quality dry fruits." />
-        <link rel="canonical" href="https://www.hikmatdryfruits.com/services" /> {/* Update with the actual URL after deployment */}
+        <link rel="canonical" href="https://hikmatdryfruits.com/services" />
       </Helmet>
 
       <h1>Our Services</h1>
