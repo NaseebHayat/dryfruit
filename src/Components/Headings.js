@@ -14,9 +14,10 @@ export default function Heading({ scrollToSection, refs }) {
     return (
         <>
             <Helmet>
-                <title>Hikmat - Quality Dry Fruits</title>
+                <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
                 <meta name="description" content="Hikmat: Your Gateway to Quality Dry Fruits. Explore our range of organic and quality dry fruits." />
                 <link rel="canonical" href="https://hikmatdryfruits.com" /> 
+                
             </Helmet>
 
             <div className='headerPhoto'>

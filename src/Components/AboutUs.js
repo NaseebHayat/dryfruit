@@ -6,7 +6,7 @@ export default function AboutUs() {
     <>
     
       <Helmet>
-        <title>About Us - Hikmat Dry Fruits</title>
+        <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
         <meta name="description" content="Learn about Hikmat Dry Fruits, a trusted provider of logistics solutions specializing in dry fruit sourcing, packing, and shipping." />
         <link rel="canonical" href="https://hikmatdryfruits.com/about-us" /> 
       </Helmet>

@@ -6,7 +6,7 @@ export default function Home() {
     <>
   
       <Helmet>
-        <title>Hikmat Dry Fruits - Quality Sourcing and Export</title>
+        <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
         <meta name="description" content="Hikmat Dry Fruits specializes in sourcing and exporting top-quality dry fruits, nuts, and seeds. Your trusted partner for quality products at competitive prices." />
         <link rel="canonical" href="https://hikmatdryfruits.com/home" />
       </Helmet>
