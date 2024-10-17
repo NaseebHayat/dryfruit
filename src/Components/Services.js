@@ -9,11 +9,7 @@ const Services = () => {
   return (
     <>
       
-      <Helmet>
-        <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
-        <meta name="description" content="Discover the services offered by Hikmat Dry Fruits, specializing in sourcing and exporting high-quality dry fruits." />
-        <link rel="canonical" href="https://hikmatdryfruits.com/services" />
-      </Helmet>
+     
 
       <h1>Our Services</h1>
       <div className='container'>

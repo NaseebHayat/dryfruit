@@ -43,11 +43,7 @@ const ContactUs = () => {
     return (
         <>
             
-            <Helmet>
-        <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
-        <meta name="description" content="Learn about Hikmat Dry Fruits, a trusted provider of logistics solutions specializing in dry fruit sourcing, packing, and shipping." />
-        <link rel="canonical" href="https://hikmatdryfruits.com/contact-us" /> 
-      </Helmet>
+            
             <h1>Contact Us</h1>
             <div className="contact-us">
 

@@ -9,12 +9,6 @@ export default function Items() {
   return (
     <>
   
-      <Helmet>
-        <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
-        <meta name="description" content="Explore our wide range of quality dry fruits and items at Hikmat Dry Fruits. Sourced and exported to meet your needs." />
-        <link rel="canonical" href="https://hikmatdryfruits.com/items" /> 
-      </Helmet>
-
       <h1>Items</h1>
       <div className='container'>
 
