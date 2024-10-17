@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+
 
 export default function Heading({ scrollToSection, refs }) {
     // State to track the active button
