@@ -34,7 +34,7 @@ function App() {
         <>
 
             <Helmet>
-                <title>Hikmat: The Ultimate Choice for Quality Dry Fruits</title>
+                <title>Afghanistan Dry Fruits</title>
                 <meta name="description" content="Description of your one-page website." />
                 <link rel="canonical" href="https://hikmatdryfruits.com/" />
             </Helmet>

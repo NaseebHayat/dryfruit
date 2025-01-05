@@ -27,6 +27,15 @@ export default function Items() {
             </div>
           </div>
         </div>
+        <div className='itemcard'>
+          <img className='card-img' src="images/tukmaria.jpg" alt="" />
+          <div className="card-content">
+            <h2>Afghan Tukmaria (Basil Seeds)</h2>
+            <div className="card-description">
+              <p> Our tukmaria is sourced from the fertile lands of Afghanistan, where it is carefully harvested and cleaned to ensure only the finest seeds remain. Known for their cooling properties and rich nutrients, these seeds are perfect for drinks, desserts, and traditional recipes. A versatile and wholesome choice for any kitchen.</p>
+            </div>
+          </div>
+        </div>
 
         <div className='itemcard'>
           <img className='card-img' src="images/raisins.jpg" alt="Raisins" />
