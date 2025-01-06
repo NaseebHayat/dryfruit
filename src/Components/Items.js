@@ -15,7 +15,7 @@ export default function Items() {
         <div className='itemcard'>
           <img className='card-img' src="images/dry figs.jpg" alt="" />
           <div className="card-content">
-            <h2>Afghan Dry Figs</h2>
+            <h2>Afghanistan Dry Figs</h2>
             <div className="card-description">
               <p> Our premium dry figs are sourced directly from the sun-kissed orchards of Afghanistan,
                   renowned for producing some of the finest figs in the world.
@@ -27,10 +27,11 @@ export default function Items() {
             </div>
           </div>
         </div>
+
         <div className='itemcard'>
           <img className='card-img' src="images/tukmaria.jpg" alt="" />
           <div className="card-content">
-            <h2>Afghan Tukmaria (Basil Seeds)</h2>
+            <h2>Afghanistan Basil Seeds (Tukmaria)</h2>
             <div className="card-description">
               <p> Our tukmaria is sourced from the fertile lands of Afghanistan, where it is carefully harvested and cleaned to ensure only the finest seeds remain. Known for their cooling properties and rich nutrients, these seeds are perfect for drinks, desserts, and traditional recipes. A versatile and wholesome choice for any kitchen.</p>
             </div>
@@ -40,7 +41,7 @@ export default function Items() {
         <div className='itemcard'>
           <img className='card-img' src="images/raisins.jpg" alt="Raisins" />
           <div className="card-content">
-            <h2>Afghan Raisins</h2>
+            <h2>Afghanistan Green Raisins</h2>
             <div className="card-description">
               <p> Our exceptional raisins are crafted from carefully selected grapes,
                   sun-dried to perfection in the beautiful landscapes of Afghanistan. 
@@ -60,7 +61,7 @@ export default function Items() {
         <div className='itemcard'>
           <img className='card-img' src="images/Solid Almonds.jpg" alt="Solid Almonds" />
           <div className="card-content">
-            <h2>Afghan Hard Almonds</h2>
+            <h2>Afghanistan Hard Almonds</h2>
             <div className="card-description">
               <p> Our exquisite hard almonds are meticulously harvested from the fertile lands of Afghanistan,
                   celebrated for their rich flavor and exceptional crunch. Each almond is selected with care,
@@ -78,7 +79,7 @@ export default function Items() {
         <div className='itemcard'>
           <img className='card-img' src="images/munakka.jpg" alt="munakka" />
           <div className="card-content">
-            <h2>Afghan Munakka (Golden raisins)</h2>
+            <h2>Afghanistan Golden raisins (Munaka)</h2>
             <div className="card-description">
               <p> Our munakka is sourced from the lush vineyards of Afghanistan,
                   where the perfect climate and fertile soil produce some of the most flavorful dried grapes in the region.
@@ -98,7 +99,7 @@ export default function Items() {
         <div className='itemcard'>
           <img className='card-img' src="images/black raisins.jpg" alt="Black raisins" />
           <div className="card-content">
-            <h2>Afghan Black raisins</h2>
+            <h2>Afghanistan Black raisins</h2>
             <div className="card-description">
               <p> Our black raisins are carefully sourced from the finest vineyards,
                   where each grape is sun-dried to perfection, locking in a deep, natural sweetness. 
