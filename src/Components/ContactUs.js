@@ -49,7 +49,7 @@ const ContactUs = () => {
 
                 <div className="contact-details">
                     <p><strong>Phone:</strong> <a href="tel:+93700332876">+9370 033 2876</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:hikmat.kdr2876@gmail.com">hikmat.kdr2876@gmail.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@hikmatdryfruits.com">info@hikmatdryfruits.com</a></p>
                     <p><strong>Business Hours:</strong> 9 AM - 6 PM (Sat - Thu)</p>
 
                     
