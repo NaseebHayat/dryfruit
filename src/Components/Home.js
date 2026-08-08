@@ -1,24 +1,45 @@
 import React from 'react';
 
-
 export default function Home() {
   return (
     <>
-  
-      
-      <h1>Home</h1>
       <div className='container'>
         <div className="homecard">
-          <img src="/images/logo.png" alt="Hikmat Dry Fruits Logo" className="homecard-img" />
+          <div className="logo-wrapper">
+            <img 
+              src="/images/logo2.png" 
+              alt="Hikmat Dry Fruits Logo" 
+              className="homecard-img" 
+            />
+          </div>
           <div className="homecard-content card-content">
-            <h2 className="card-title">Hikmat Dry Fruits</h2>
+            <h2 className="card-title">Premium Dry Fruits Since 2018</h2>
             <p className="card-description">
-              We specialize in sourcing, packing, and exporting top-quality dry fruits to meet the needs of international buyers.
-              Our clients trust us to provide the finest nuts, seeds, and dried fruits at competitive prices,
-              allowing them to resell in their local markets with confidence. We focus on delivering fresh,
-              high-quality products that meet the demands of businesses looking for the best value. With a commitment to efficient service and timely shipping,
-              we are your reliable partner for sourcing premium dry fruits at unbeatable prices.
+              <strong>Hikmat Dry Fruits</strong> is your trusted partner for sourcing, 
+              packing, and exporting <strong>premium-quality dry fruits</strong> to 
+              international buyers. We deliver the finest nuts, seeds, and dried fruits 
+              at <strong>competitive prices</strong>, ensuring freshness and quality 
+              that your customers will love.
             </p>
+            <p className="card-description" style={{ marginTop: '10px' }}>
+              ✅ <strong>100% Premium Quality</strong> &nbsp;|&nbsp; 
+              ✅ <strong>Competitive Pricing</strong> &nbsp;|&nbsp; 
+              ✅ <strong>Worldwide Shipping</strong>
+            </p>
+            <div style={{ 
+              marginTop: '18px', 
+              display: 'flex', 
+              gap: '10px', 
+              flexWrap: 'wrap',
+              justifyContent: 'center'
+            }}>
+              <a href="#items" className="btn-primary">
+                🛒 Explore Products
+              </a>
+              <a href="#contact" className="btn-secondary">
+                📞 Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
